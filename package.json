@@ -3,8 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
+    "prettier": "^1.5.2",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "react-test-renderer": "^15.6.1",
+    "redux": "^3.7.1",
+    "redux-saga": "^0.15.4",
+    "styled-components": "^2.1.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
@@ -13,6 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pretty": "prettier --single-quote --trailing-comma es5 --write \"{src,app,__{tests,mocks}__}/**/*.js\""
   }
 }
