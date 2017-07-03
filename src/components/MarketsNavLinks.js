@@ -9,7 +9,7 @@ const MarketsNavLinks = ({ marketData, marketSelectedId, marketsLoaded }) => {
         <MarketsNavLinkCTA
           to={`/${market}`}
           key={index}
-          selected={(market === marketSelectedId)}
+          selected={market === marketSelectedId}
         >
           {marketData.markets[market].name}
         </MarketsNavLinkCTA>
