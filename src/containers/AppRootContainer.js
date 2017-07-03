@@ -1,8 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { fetchLayout } from '../actions';
 import { getLayoutData } from '../reducers/selectors';
-import Layout from '../components/Layout';
+import AppRoot from '../components/AppRoot';
 
 const mapDispatchToProps = dispatch => ({
   fetchLayout: () => {
@@ -14,14 +15,16 @@ const mapStateToProps = state => ({
   layout: getLayoutData(state),
 });
 
-class LayoutContainer extends React.Component {
+class AppRootContainer extends React.Component {
   componentWillMount() {
     this.props.fetchLayout();
   }
 
   render() {
-    return <Layout {...this.props} />;
+    return <AppRoot {...this.props} />;
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(LayoutContainer);
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(AppRootContainer)
+);

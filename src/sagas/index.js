@@ -1,4 +1,4 @@
-import { call, put, fork, takeLatest, all, take } from 'redux-saga/effects';
+import { call, put, fork, takeLatest, all } from 'redux-saga/effects';
 import api from '../services';
 import * as types from '../constants';
 
@@ -22,17 +22,12 @@ function* fetchMarkets() {
 
 function* watchLoadLayout() {
   yield takeLatest(types.FETCH_LAYOUT, fetchLayout);
-  //yield call(fetchLayout) 
 }
 
 function* watchLoadMarkets() {
   yield takeLatest(types.FETCH_MARKETS, fetchMarkets);
-  //yield call(fetchMarkets) 
 }
 
 export default function* root() {
-  yield all([
-    fork(watchLoadLayout),
-    fork(watchLoadMarkets)
-  ])
+  yield all([fork(watchLoadLayout), fork(watchLoadMarkets)]);
 }

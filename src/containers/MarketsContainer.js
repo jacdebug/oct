@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchMarkets } from '../actions';
-import { getLayoutData } from '../reducers/selectors';
-import Market from '../components/Market';
+import { getMaketData } from '../reducers/selectors';
+import Markets from '../components/Markets';
 
 const mapDispatchToProps = dispatch => ({
   fetchMarkets: () => {
@@ -14,14 +14,14 @@ const mapStateToProps = state => ({
   market: getMaketData(state),
 });
 
-class MarketContainer extends React.Component {
+class MarketsContainer extends React.Component {
   componentWillMount() {
     this.props.fetchMarkets();
   }
 
   render() {
-    return <Market {...this.props} />;
+    return <Markets {...this.props} />;
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MarketContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(MarketsContainer);

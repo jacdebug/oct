@@ -2,4 +2,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
+      background: #2b364b;
+      font-size: 0.8em;
+}
+
+.App {
+  font-family: AvenirMedium,Trebuchet MS;
+  color: #ccc;
+    background: #11161F;
+}
+
+a {
+  color: #ccc;
+}
+
+a:hover {
+  color: #ffc952;
 }

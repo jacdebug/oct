@@ -1,5 +1,3 @@
-
-
 const API_ROOT = 'http://localhost:3000/';
 
 function callApi(path) {
@@ -12,10 +10,7 @@ function callApi(path) {
         return Promise.reject(json);
       }
 
-      return Object.assign(
-        {},
-        json
-      );
+      return Object.assign({}, json);
     })
     .then(
       response => ({ response }),
