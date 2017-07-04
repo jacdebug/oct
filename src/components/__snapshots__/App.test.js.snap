@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="sc-gqjmRU jQdaRo"
+  >
+    <a
+      className="sc-VigVT JmRll"
+      href="/"
+      title="Oddschecker"
+    />
+    <div
+      className="sc-htpNat dmHWO"
+    >
+      <div
+        className="sc-htpNat dmHWO"
+      >
+        <div />
+      </div>
+      <div
+        className="sc-jTzLTM bjQYOY"
+      />
+      <div
+        className="sc-htpNat dmHWO"
+      >
+        <div />
+      </div>
+    </div>
+  </header>
+  <div
+    className="sc-iwsKbI hPCbkn"
+  >
+    <div
+      className="sc-bwzfXH bfyPXh"
+    >
+      <div>
+        Loading... 
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-fjdhpX biaDMe"
+  >
+    <div />
+  </div>
+</div>
+`;

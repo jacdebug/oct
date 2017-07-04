@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<styled.div>
+  <styled.div>
+    <div>
+      Barcelona
+    </div>
+    <div
+      className="odds"
+    >
+      1.05
+    </div>
+  </styled.div>
+  <styled.div>
+    <div>
+      Empate
+    </div>
+    <div
+      className="odds"
+    >
+      15
+    </div>
+  </styled.div>
+  <styled.div>
+    <div>
+      Granada
+    </div>
+    <div
+      className="odds"
+    >
+      51
+    </div>
+  </styled.div>
+</styled.div>
+`;

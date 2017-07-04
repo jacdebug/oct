@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "tcolor1": "#2b364b",
+      "tcolor2": "#707886",
+      "tcolor3": "#ffc952",
+      "tcolor4": "#fff",
+      "tcolor5": "#1c2637",
+    }
+  }
+>
+  <div
+    className="App"
+  >
+    <Component />
+    <Connect(MarketsContainer) />
+    <Component />
+  </div>
+</ThemeProvider>
+`;

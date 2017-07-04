@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div>
+  <Styled(Component)
+    to="/"
+  >
+     
+     
+    link1
+     
+     
+  </Styled(Component)>
+  <Styled(Component)
+    to="/"
+  >
+     
+     
+    link3
+     
+     
+  </Styled(Component)>
+</div>
+`;

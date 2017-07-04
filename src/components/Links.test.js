@@ -1,21 +1,29 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Links from './Links';
 
 const linksTestArray = [
   {
-    name: 'name1',
+    name: 'link1',
+    url: '/',
+  },
+  {
+    name: 'link3',
     url: '/',
   },
 ];
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(
-    <Router>
-      <Links links={linksTestArray} />
-    </Router>,
-    div
-  );
+  shallow(<Links links={linksTestArray} />);
+});
+
+it('renders a snapshot', () => {
+  const tree = shallow(<Links links={linksTestArray} />);
+  expect(toJson(tree)).toMatchSnapshot();
+});
+
+it('renders list of links', () => {
+  const wrapper = shallow(<Links links={linksTestArray} />);
+  expect(wrapper.find('Styled(Component)')).toHaveLength(2);
 });

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Box from './Box';
 
@@ -15,6 +16,10 @@ const Bets = ({ bets }) =>
       </BetsWrapper>
     )}
   </Box>;
+
+Bets.PropTypes = {
+  bets: PropTypes.array,
+};
 
 export default Bets;
 

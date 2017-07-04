@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NavigationLink from './NavigationLink';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import MainNavigationLink from './MainNavigationLink';
 
 const linkTestData = {
   name: 'name1',
@@ -9,13 +9,18 @@ const linkTestData = {
 };
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(
-    <Router>
-      <NavigationLink to={linkTestData.url}>
-        {linkTestData.name}
-      </NavigationLink>
-    </Router>,
-    div
+  shallow(
+    <MainNavigationLink to={linkTestData.url}>
+      {linkTestData.name}
+    </MainNavigationLink>
   );
+});
+
+it('renders a snapshot', () => {
+  const tree = shallow(
+    <MainNavigationLink to={linkTestData.url}>
+      {linkTestData.name}
+    </MainNavigationLink>
+  );
+  expect(toJson(tree)).toMatchSnapshot();
 });

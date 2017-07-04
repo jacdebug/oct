@@ -29,6 +29,10 @@ const Team = ({ data }) =>
     </TeamName>
   </div>;
 
-const TeamImg = styled.img`max-width: 100px;`;
-const TeamName = styled.div`text-align: center`;
 const TeamVs = styled.div`margin: 30px;`;
+const TeamImg = styled.img`max-width: 100px;`;
+
+const TeamName = styled.div`
+  padding: 5px;
+  text-align: center;
+`;

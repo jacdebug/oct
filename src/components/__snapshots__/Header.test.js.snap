@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<styled.header>
+  <styled.a
+    href="/"
+    title="Oddschecker"
+  />
+  <styled.div>
+    <styled.div>
+      <Links />
+    </styled.div>
+    <styled.div />
+    <styled.div>
+      <Links
+        bright={true}
+      />
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;

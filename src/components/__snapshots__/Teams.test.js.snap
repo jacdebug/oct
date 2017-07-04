@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<styled.div>
+  <Team
+    data={
+      Object {
+        "logo": "barcelona.png",
+        "name": "Barcelona",
+      }
+    }
+  />
+  <styled.div>
+    Vs
+  </styled.div>
+  <Team
+    data={
+      Object {
+        "logo": "granada.png",
+        "name": "Granada",
+      }
+    }
+  />
+</styled.div>
+`;

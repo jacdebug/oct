@@ -6,7 +6,8 @@ const layout = (
 ) => {
   switch (action.type) {
     case types.FETCH_LAYOUT_SUCESS:
-      return Object.assign({}, state, action.response.navigation);
+      const nav = action.response && action.response.navigation;
+      return Object.assign({}, state, nav);
 
     default:
       return state;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<Component
+  className="sc-bdVaJa cOhLSd"
+  to="/"
+>
+  name1
+</Component>
+`;
