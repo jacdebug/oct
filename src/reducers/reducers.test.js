@@ -19,16 +19,3 @@ test('reducers init', () => {
 
   expect(state).toEqual(initState);
 });
-
-test('reducers set market ', () => {
-  let state = reducers(initState, {
-    type: 'SET_MARKET',
-    payload: {
-      id: 'testid',
-    },
-  });
-
-  expect(state).toEqual(
-    Object.assign({}, initState, { marketSelectedId: 'testid' })
-  );
-});
